@@ -1,12 +1,12 @@
 services:
   db:
-    container_name: zerodotemail-db
+    container_name: snooze-db
     image: postgres:17
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: zerodotemail
+      POSTGRES_DB: snooze
       PGDATA: /var/lib/postgresql/data/pgdata
     ports:
       - 5432:5432
@@ -14,8 +14,8 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   valkey:
-    container_name: zerodotemail-redis
-    image: docker.io/bitnami/valkey:8.0
+    container_name: snooze-redis
+    image: valkey/valkey:8.0
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - VALKEY_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
@@ -25,7 +25,7 @@ services:
       - valkey-data:/bitnami/valkey/data
 
   upstash-proxy:
-    container_name: zerodotemail-upstash-proxy
+    container_name: snooze-upstash-proxy
     image: hiett/serverless-redis-http:latest
     environment:
       SRH_MODE: env
