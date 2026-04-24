@@ -73,7 +73,7 @@ export function Layout({ children }: PropsWithChildren) {
           <ClientProviders>{children}</ClientProviders>
           <DubAnalytics
             domainsConfig={{
-              refer: 'mail0.com',
+              refer: 'snooze.app',
             }}
           />
         </ServerProviders>

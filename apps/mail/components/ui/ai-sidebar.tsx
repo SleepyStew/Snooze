@@ -45,7 +45,6 @@ function ChatHeader({
   isPro,
   onNewChat,
 }: ChatHeaderProps) {
-  const [, setPricingDialog] = useQueryState('pricingDialog');
   const { chatMessages } = useBilling();
   return (
     <div className="relative flex items-center justify-between px-2.5 pb-[10px] pt-[13px]">
@@ -137,16 +136,7 @@ function ChatHeader({
                     You've used {chatMessages.usage} out of {chatMessages.included_usage} chat
                     messages.
                   </p>
-                  <p className="mb-2">Upgrade for unlimited messages!</p>
-                  <Button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setPricingDialog('true');
-                    }}
-                    className="h-8 w-full"
-                  >
-                    Start 7 day free trial
-                  </Button>
+                  <p className="mb-1">You are currently on the standard usage tier.</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

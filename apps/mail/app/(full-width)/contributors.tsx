@@ -66,7 +66,7 @@ const coreTeamMembers = [
   'dakdevs',
   'mrgsub',
 ];
-const REPOSITORY = 'Mail-0/Zero';
+const REPOSITORY = 'Snooze/Snooze';
 
 const specialRoles: Record<
   string,
@@ -388,12 +388,12 @@ export default function OpenPage() {
                   <div className="relative h-8 w-8">
                     <img
                       src="/black-icon.svg"
-                      alt="0.email Logo"
+                      alt="snooze Logo"
                       className="object-contain dark:hidden"
                     />
                     <img
                       src="/white-icon.svg"
-                      alt="0.email Logo"
+                      alt="snooze Logo"
                       className="hidden object-contain dark:block"
                     />
                   </div>
@@ -665,7 +665,7 @@ export default function OpenPage() {
             <h1 className="text-3xl font-semibold tracking-tight text-neutral-900/80 dark:text-white">
               Core Team
             </h1>
-            <p className="text-muted-foreground mt-2">Meet the people behind 0.email</p>
+            <p className="text-muted-foreground mt-2">Meet the people behind snooze</p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -751,7 +751,7 @@ export default function OpenPage() {
               Contributors
             </h1>
             <div className="text-muted-foreground mt-2 flex items-center justify-center gap-2">
-              <span>Thank you to all the contributors who have helped make 0.email possible</span>
+              <span>Thank you to all the contributors who have helped make snooze possible</span>
             </div>
           </div>
 
@@ -1008,7 +1008,7 @@ export default function OpenPage() {
 
         <div className="mb-6 mt-2 flex items-center justify-center gap-4">
           <a
-            href="https://discord.gg/mail0"
+            href="https://discord.gg/snooze"
             target="_blank"
             rel="noreferrer"
             className="text-neutral-500 transition-colors hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
@@ -1017,7 +1017,7 @@ export default function OpenPage() {
             <Discord className="dark:fill-muted-foreground h-4 w-4" />
           </a>
           <a
-            href="https://x.com/mail0dotcom"
+            href="https://x.com/snooze"
             target="_blank"
             rel="noreferrer"
             className="text-neutral-500 transition-colors hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"

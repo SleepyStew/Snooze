@@ -22,25 +22,25 @@ import { toast } from 'sonner';
 const resources = [
   {
     title: 'GitHub',
-    href: 'https://github.com/Mail-0/Zero',
+    href: 'https://github.com/Snooze/Snooze',
     description: 'Check out our open-source projects and contributions.',
     platform: 'github' as const,
   },
   {
     title: 'Twitter',
-    href: 'https://x.com/mail0dotcom',
+    href: 'https://x.com/snooze',
     description: 'Follow us for the latest updates and announcements.',
     platform: 'twitter' as const,
   },
   {
     title: 'LinkedIn',
-    href: 'https://www.linkedin.com/company/mail0/',
+    href: 'https://www.linkedin.com/company/snooze/',
     description: 'Connect with us professionally and stay updated.',
     platform: 'linkedin' as const,
   },
   {
     title: 'Discord',
-    href: 'https://discord.gg/mail0',
+    href: 'https://discord.gg/snooze',
     description: 'Join our community and chat with the team.',
     platform: 'discord' as const,
   },
@@ -50,7 +50,7 @@ const aboutLinks = [
   {
     title: 'About',
     href: '/about',
-    description: 'Learn more about Zero and our mission.',
+    description: 'Learn more about Snooze and the project mission.',
   },
   {
     title: 'Privacy',
@@ -65,7 +65,7 @@ const aboutLinks = [
   {
     title: 'Contributors',
     href: '/contributors',
-    description: 'See the contributors to Zero.',
+    description: 'See the contributors to Snooze.',
   },
 ];
 
@@ -89,7 +89,7 @@ export function Navigation() {
   const { data: githubData } = useQuery({
     queryKey: ['githubStars'],
     queryFn: async () => {
-      const response = await fetch('https://api.github.com/repos/Mail-0/Zero', {
+      const response = await fetch('https://api.github.com/repos/Snooze/Snooze', {
         headers: {
           Accept: 'application/vnd.github.v3+json',
         },
@@ -114,7 +114,7 @@ export function Navigation() {
         <nav className="border-input/50 flex w-full max-w-4xl items-center justify-between gap-2 rounded-xl border-t bg-[#1E1E1E] p-3 px-6">
           <div className="flex items-center gap-6">
             <Link to="/" className="relative bottom-1 cursor-pointer">
-              <img src="white-icon.svg" alt="Zero Email" width={22} height={22} />
+              <img src="white-icon.svg" alt="Snooze" width={22} height={22} />
               <span className="text-muted-foreground absolute -right-[-0.5px] text-[10px]">
                 beta
               </span>
@@ -154,11 +154,6 @@ export function Navigation() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem className="bg-transparent text-white">
-                  <Button asChild variant="ghost" className="h-9 bg-transparent cursor-pointer">
-                    <a href="/pricing">Pricing</a>
-                  </Button>
-                </NavigationMenuItem>
                 <NavigationMenuItem className="bg-transparent text-white cursor-pointer">
                   <a href="/privacy">
                     <Button variant="ghost" className="ml-1 h-9 bg-transparent">
@@ -171,7 +166,7 @@ export function Navigation() {
           </div>
           <div className="flex gap-2">
             <a
-              href="https://github.com/Mail-0/Zero"
+              href="https://github.com/Snooze/Snooze"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
@@ -226,14 +221,14 @@ export function Navigation() {
                 <Link to="/" onClick={() => setOpen(false)}>
                   <img
                     src="white-icon.svg"
-                    alt="Zero Email"
+                    alt="Snooze"
                     className="hidden object-contain dark:block"
                     width={22}
                     height={22}
                   />
                   <img
                     src="/black-icon.svg"
-                    alt="0.email Logo"
+                    alt="snooze Logo"
                     className="object-contain dark:hidden"
                     width={22}
                     height={22}
@@ -246,9 +241,6 @@ export function Navigation() {
                 <Link to="/" onClick={() => setOpen(false)}>
                   Home
                 </Link>
-                <Link to="/pricing" onClick={() => setOpen(false)}>
-                  Pricing
-                </Link>
                 {aboutLinks.map((link) => (
                   <a key={link.title} href={link.href} className="block font-medium">
                     {link.title}
@@ -258,7 +250,7 @@ export function Navigation() {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://cal.com/team/0/chat"
+                href="https://cal.com/team/snooze/chat"
                 className="font-medium"
               >
                 Contact Us
