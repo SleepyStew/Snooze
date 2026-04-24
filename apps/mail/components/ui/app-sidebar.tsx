@@ -25,7 +25,6 @@ import { m } from '@/paraglide/messages';
 // import { Video } from 'lucide-react';
 import { NavUser } from './nav-user';
 import { NavMain } from './nav-main';
-import { useQueryState } from 'nuqs';
 // import { toast } from 'sonner';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -38,7 +37,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     }
     return true;
   });
-  const [, setPricingDialog] = useQueryState('pricingDialog');
   const { isFullScreen } = useAIFullScreen();
   const { data: stats } = useStats();
   const location = useLocation();
@@ -139,28 +137,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               >
                 <X className="h-2.5 w-2.5 fill-black dark:fill-white/50" />
               </Button>
-              <div className="flex items-start gap-2">
-                <div className="flex-1 space-y-1">
-                  <div className="flex items-center gap-2">
-                    <h3 className="text-sm font-semibold text-black dark:text-white/90">
-                      Get Zero Pro
-                    </h3>
-                  </div>
-                  <p className="text-[13px] leading-snug text-black dark:text-white/50">
-                    Get unlimited AI chats, auto-labeling, writing assistant, and more.
-                  </p>
-                </div>
-              </div>
-              <button
-                onClick={() => setPricingDialog('true')}
-                className="mt-3 inline-flex h-7 w-full items-center justify-center gap-0.5 overflow-hidden rounded-lg bg-[#8B5CF6] px-2"
-              >
-                <div className="flex items-center justify-center gap-2.5 px-0.5">
-                  <div className="justify-start whitespace-nowrap text-xs leading-none text-white md:text-sm">
-                    Start 7 day free trial
-                  </div>
-                </div>
-              </button>
+              <p className="pr-7 text-[13px] leading-snug text-black dark:text-white/70">
+                AI usage is limited on this account tier. Keep using Snooze with core features, or
+                self-host to configure higher limits.
+              </p>
             </div>
           )}
 

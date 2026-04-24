@@ -93,18 +93,18 @@ const sections = [
     content: (
       <div className="space-y-4">
         <p>
-          At Zero, we believe that privacy is a fundamental right. Our open-source email solution is
+          At Snooze, we believe that privacy is a fundamental right. Our open-source email solution is
           built with privacy at its core, and we&apos;re committed to being transparent about how we
           handle your data.
         </p>
         <p className="font-semibold">
-          Important: Zero is a client-only email application. We DO NOT store your emails on our
+          Important: Snooze is a client-only email application. We DO NOT store your emails on our
           servers. All email data is processed directly between your browser and Gmail.
         </p>
         <p>Our verified privacy commitments:</p>
         <ul className="ml-4 list-disc space-y-2">
           <li>
-            Zero Email Storage: We never store your emails - they remain in your Gmail account
+            Snooze Storage: We never store your emails - they remain in your Gmail account
           </li>
           <li>Client-Side Processing: All email processing happens in your browser</li>
           <li>Open Source: Our entire codebase is public and can be audited</li>
@@ -118,7 +118,7 @@ const sections = [
     title: 'Google Account Integration',
     content: (
       <>
-        <p className="mb-4">When you use Zero with your Google Account:</p>
+        <p className="mb-4">When you use Snooze with your Google Account:</p>
         <ul className="ml-4 list-disc space-y-2">
           <li>We request access to your Gmail data only after receiving your explicit consent</li>
           <li>We access only the necessary Gmail API scopes required for email functionality</li>
@@ -161,7 +161,7 @@ const sections = [
         <div>
           <h3 className="mb-3 text-lg font-medium">Self-Hosted Instances</h3>
           <ul className="ml-4 list-disc space-y-2">
-            <li>When you self-host Zero, your email data remains entirely under your control</li>
+            <li>When you self-host Snooze, your email data remains entirely under your control</li>
             <li>No data is sent to our servers or third parties without your explicit consent</li>
             <li>You maintain complete ownership and responsibility for your data</li>
             <li>We provide detailed documentation on secure self-hosting practices</li>
@@ -239,7 +239,7 @@ const sections = [
                 <li>Basic profile information</li>
               </ul>
             </li>
-            <li>This data is used exclusively for providing email functionality within Zero</li>
+            <li>This data is used exclusively for providing email functionality within Snooze</li>
             <li>No Google user data is used for advertising, marketing, or profiling purposes</li>
             <li>We maintain detailed audit logs of all data access for security and compliance</li>
             <li>Access to user data is strictly limited to essential personnel</li>
@@ -335,100 +335,20 @@ const sections = [
     ),
   },
   {
-    title: 'Pricing and Refund Policy',
-    content: (
-      <div className="space-y-6">
-        <div>
-          <h3 className="mb-3 text-lg font-medium">Free Plan and Trial Period</h3>
-          <ul className="ml-4 list-disc space-y-2">
-            <li>
-              Zero offers a free plan with basic features that requires no payment information
-            </li>
-            <li>For premium features, we offer a 7-day free trial period</li>
-            <li>A valid credit card is required to start the premium free trial</li>
-            <li>During the trial period, you have full access to all premium features</li>
-            <li>You can cancel at any time during the trial period without any charges</li>
-            <li>
-              If you don't cancel before the trial ends, you'll be automatically charged for the
-              premium subscription
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="mb-3 text-lg font-medium">Payment and Billing</h3>
-          <ul className="ml-4 list-disc space-y-2">
-            <li>
-              After the 7-day free trial period ends, subscription charges will begin automatically
-            </li>
-            <li>Subscription fees are billed in advance on a monthly or annual basis</li>
-            <li>Current pricing information is available on our pricing page</li>
-            <li>All payments are processed securely through our trusted payment partners</li>
-            <li>Subscription charges will appear on your billing statement as "Zero Email"</li>
-            <li>
-              We accept major credit cards and other payment methods as available in your region
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="mb-3 text-lg font-medium">Non-Refundable Policy</h3>
-          <ul className="ml-4 list-disc space-y-2">
-            <li className="font-semibold">
-              Important: All subscription fees are non-refundable once the 7-day free trial period
-              has ended
-            </li>
-            <li>
-              This policy applies to all premium subscription plans (monthly, annual, and enterprise
-              plans)
-            </li>
-            <li>Refunds are not provided for partial subscription periods</li>
-            <li>Refunds are not available for unused portions of your subscription</li>
-            <li>
-              In exceptional circumstances, refunds may be considered on a case-by-case basis at our
-              sole discretion
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="mb-3 text-lg font-medium">Subscription Management</h3>
-          <ul className="ml-4 list-disc space-y-2">
-            <li>You can cancel your subscription at any time through your account settings</li>
-            <li>Cancellation takes effect at the end of your current billing period</li>
-            <li>
-              You will continue to have access to premium features until the end of your paid period
-            </li>
-            <li>No partial refunds are provided for early cancellation</li>
-            <li>Reactivation of cancelled subscriptions may be subject to current pricing</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="mb-3 text-lg font-medium">Price Changes</h3>
-          <ul className="ml-4 list-disc space-y-2">
-            <li>We reserve the right to modify subscription pricing at any time</li>
-            <li>
-              Existing subscribers will be notified of price changes at least 30 days in advance
-            </li>
-            <li>Price changes will take effect at your next billing cycle</li>
-            <li>You may cancel your subscription before the price change takes effect</li>
-          </ul>
-        </div>
-      </div>
-    ),
-  },
-  {
     title: 'Contact',
     content: (
       <div className="space-y-3">
         <p>For privacy-related questions or concerns:</p>
         <div className="flex flex-col space-y-2">
           <a
-            href="mailto:founders@0.email"
+            href="mailto:support@snooze.app"
             className="inline-flex items-center text-blue-600 hover:text-blue-800"
           >
             <Mail className="mr-2 h-4 w-4" />
-            founders@0.email
+            support@snooze.app
           </a>
           <a
-            href="https://github.com/Mail-0/Zero"
+            href="https://github.com/Snooze/Snooze"
             className="inline-flex items-center text-blue-600 hover:text-blue-800"
           >
             <Github className="mr-2 h-4 w-4" />
